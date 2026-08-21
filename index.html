@@ -1,34 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Blog preview card</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 0.6875rem; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+<meta charset="UTF-8">
+<title>HTML & CSS Foundations — Card</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  Learning
+<div class="card">
+  <div class="art">
+    <img src="assets/images/illustration-article.svg">
+      <path d="M0 150 L60 150 Q90 150 110 120 L150 60 L200 200 L0 200 Z" fill="#14140f"/>
+      <ellipse cx="150" cy="95" rx="70" ry="65" fill="#ffffff"/>
+      <ellipse cx="195" cy="95" rx="55" ry="65" fill="#14140f"/>
+      <path d="M120 210 Q180 60 260 100 T360 60" stroke="#14140f" stroke-width="6" fill="none"/>
+      <polyline points="230,150 250,120 270,150 290,120 310,150 330,120" stroke="#14140f" stroke-width="4" fill="none"/>
+      <path d="M120 65 L100 65 L100 95 M155 65 L175 65 L175 95" stroke="#14140f" stroke-width="4" fill="none"/>
+    </svg>
+  </div>
 
-  Published 21 Dec 2023
+  <div class="body">
+    <span class="tag">Learning</span>
+    <div class="date">Published 21 Dec 2023</div>
+    <h1>HTML &amp; CSS foundations</h1>
+    <p class="desc">These languages are the backbone of every website, defining structure, content, and presentation.</p>
+    <div class="author">
+      <img src="assets/images/image-avatar.webp">
+      <div class="author-name">Greg Hooper</div>
+    </div>
+  </div>
+</div>
 
-  HTML & CSS foundations
-
-  These languages are the backbone of every website, defining structure, content, and presentation.
-
-  Greg Hooper
-  
-  <footer class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </footer>
 </body>
 </html>
